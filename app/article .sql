@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 13, 2020 at 10:13 AM
+-- Generation Time: Feb 25, 2020 at 08:40 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `articles` (
   `id` int(11) NOT NULL,
   `title` varchar(25) NOT NULL,
-  `description` text NOT NULL,
+  `discription` text NOT NULL,
   `alias` varchar(25) NOT NULL,
   `img` varchar(25) NOT NULL,
   `meta_key` varchar(50) NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE `articles` (
 -- Dumping data for table `articles`
 --
 
-INSERT INTO `articles` (`id`, `title`, `description`, `alias`, `img`, `meta_key`, `meta_desc`) VALUES
+INSERT INTO `articles` (`id`, `title`, `discription`, `alias`, `img`, `meta_key`, `meta_desc`) VALUES
 (1, 'Mi Note 10', 'Diagonala display:  6,47 inch • Rezolutie display:  2340x1080  • Tip de ecran matrice:  AMOLED  • Tipul de sticlă:  Corning Gorilla Glass 5  • Camera foto:  108 Mp • Cameră frontală:  32 Mp • RAM:  6 GB  • Memorie interna:  128 Gb  • Scaner de amprentă • Culoare:  verde ', '', '', 'note 10', 'Diagonala display'),
 (2, 'Galaxy A50', 'Diagonala display:  6,4 inch • Rezolutie display:  2340x1080  • Tip de ecran matrice:  Super AMOLED  • Tipul de sticlă:  Corning Gorilla Glass  • Camera foto:  25 Mp • Cameră frontală:  25 Mp • 2 cartele SIM • RAM:  4 GB  • Memorie interna:  64 GB  • Culoare:  negru ', '', '', 'a50', 'Diagonala display'),
 (3, 'Note 8 Pro', 'Diagonala display:  6,53 inch • Rezolutie display:  2340x1080  • Tip de ecran matrice:  IPS  • Tipul de sticlă:  Corning Gorilla Glass 5  • Camera foto:  64 Mp • Cameră frontală:  20 Mp • RAM:  6 GB  • Memorie interna:  64 GB  • Scaner de amprentă • Culoare:  alb ', '', '', 'note 8', 'Diagonala display'),

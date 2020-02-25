@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <title>Jumbotron Template · Bootstrap</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" >
+    <link href="{{asset('css/jumbotron.css')}}" rel="stylesheet">
 
      </head>
   <body>
@@ -33,7 +33,7 @@
        @if($article)
       <div>
         <h2>{{$article->title}}</h2>
-        <p>{!!$article->discription!!}</p>
+        <p>{!!$article->text!!}</p>
        
       </div>
 

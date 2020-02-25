@@ -13,4 +13,4 @@
 
 Route::get('/', 'IndexController@index');
 Route::get('/pag2', 'IndexController@pag2');
-Route::get('article/{id}','IndexController@show')->name('articleShow');
+Route::get('/article/{id}','IndexController@show')->name('articleShow');

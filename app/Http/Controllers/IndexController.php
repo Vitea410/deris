@@ -10,13 +10,16 @@ class IndexController extends Controller
   protected $bla;
 
   public function _construct(){
-    $this->hl='Hello World!!!';
-    $this->bla='This is a template for a simple marketing ';
+    
+    $this->hl='Salut, Victor';
+    $this->bla='This is a template for a simple marketing';
+    
   }
 
   public function index(){
-  
-    $articles=Article::select(['id','title','discription'])->get();
+ $this->hl='Salut, Victor';
+    $this->bla='This is a template for a simple marketing';
+    $articles=Article::select(['id','title','discription','img'])->get();
     return view('index')->with(['hl'=>$this->hl,
                                'bla'=>$this->bla,
                                'articles'=>$articles]);
@@ -32,7 +35,9 @@ class IndexController extends Controller
   	
   }
   public function show($id){
-    $article=Article::select(['id', 'title', 'discription'])->where('id',$id)->first();
+   $this->hl='Salut, Victor';
+    $this->bla='This is a template for a simple marketing';
+    $article=Article::select(['id', 'title', 'text'])->where('id',$id)->first();
     return view('article-content')->with(['hl'=>$this->hl,
                                           'bla'=>$this->bla,
                                           'article'=>$article]);
